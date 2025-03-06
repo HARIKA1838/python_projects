@@ -13,31 +13,30 @@ name=[]
 for i in names:
     d=i.get_text()
     name.append(d)
-# print(name)
+print(name)
 
 prices=soup.find_all('div',class_="Nx9bqj _4b5DiR")
 price=[]
 for i in prices:
     d=i.get_text()
     price.append(d)
-# print(price)
+print(price)
 
 ratings=soup.find_all('div',class_="XQDdHH")
 rating=[]
 for i in ratings:
     d=i.get_text()
     rating.append(d)
-# print(rating)
+print(rating)
 
 images=soup.find_all('img',class_="DByuf4")
 image=[]
 for i in images:
     d=i['src']
     image.append
-# print(image)
+print(image)
 
 df=pd.DataFrame()
-# print(df)
 
 df["Names"]=name
 df["Prices"]=price
